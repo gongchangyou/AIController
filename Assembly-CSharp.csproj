@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{CB5077CA-AF2E-4D1F-7EC1-D60A775B22AC}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_8;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\script\AIController.cs" />
+     <Compile Include="Assets\script\AIRuntimeController.cs" />
+     <Compile Include="Assets\script\Actions\Animator\CrossFade.cs" />
+     <Compile Include="Assets\script\Actions\Animator\Play.cs" />
+     <Compile Include="Assets\script\Actions\Animator\SetBool.cs" />
+     <Compile Include="Assets\script\Actions\Animator\SetFloat.cs" />
+     <Compile Include="Assets\script\Actions\Animator\SetIKPosition.cs" />
+     <Compile Include="Assets\script\Actions\Animator\SetInteger.cs" />
+     <Compile Include="Assets\script\Actions\Animator\SetLayerWeight.cs" />
+     <Compile Include="Assets\script\Actions\Animator\SetLookAtPosition.cs" />
+     <Compile Include="Assets\script\Actions\Animator\SetTrigger.cs" />
+     <Compile Include="Assets\script\Actions\Audio\Play.cs" />
+     <Compile Include="Assets\script\Actions\BaseAction.cs" />
+     <Compile Include="Assets\script\Actions\GameObject\Destroy.cs" />
+     <Compile Include="Assets\script\Actions\GameObject\DestroyComponent.cs" />
+     <Compile Include="Assets\script\Actions\GameObject\FindChild.cs" />
+     <Compile Include="Assets\script\Actions\GameObject\FindClosest.cs" />
+     <Compile Include="Assets\script\Actions\GameObject\FindGameObject.cs" />
+     <Compile Include="Assets\script\Actions\GameObject\GetAngle.cs" />
+     <Compile Include="Assets\script\Actions\GameObject\Instantiate.cs" />
+     <Compile Include="Assets\script\Actions\GameObject\SendMessage.cs" />
+     <Compile Include="Assets\script\Actions\GameObject\SetActiveScript.cs" />
+     <Compile Include="Assets\script\Actions\Misc\AddAttribute.cs" />
+     <Compile Include="Assets\script\Actions\Misc\Log.cs" />
+     <Compile Include="Assets\script\Actions\Misc\SetupCountDownTimer.cs" />
+     <Compile Include="Assets\script\Actions\Misc\SetupRandomValue.cs" />
+     <Compile Include="Assets\script\Actions\Misc\SetupTimeCounter.cs" />
+     <Compile Include="Assets\script\Actions\Misc\WaitForSeconds.cs" />
+     <Compile Include="Assets\script\Actions\NavMeshAgent\GetAngleVelocity.cs" />
+     <Compile Include="Assets\script\Actions\NavMeshAgent\GetProjectedVelocity.cs" />
+     <Compile Include="Assets\script\Actions\Parameter\AddParameterInt.cs" />
+     <Compile Include="Assets\script\Actions\Parameter\SetParameterBool.cs" />
+     <Compile Include="Assets\script\Actions\Parameter\SetParameterFloat.cs" />
+     <Compile Include="Assets\script\Actions\Parameter\SetParameterInt.cs" />
+     <Compile Include="Assets\script\Actions\Parameter\SetRandomFloat.cs" />
+     <Compile Include="Assets\script\Actions\Parameter\SetRandomInt.cs" />
+     <Compile Include="Assets\script\Actions\Sound\PlayBGM.cs" />
+     <Compile Include="Assets\script\Actions\Sound\StopBGM.cs" />
+     <Compile Include="Assets\script\BaseAttribute.cs" />
+     <Compile Include="Assets\script\BaseTransition.cs" />
+     <Compile Include="Assets\script\CanCreateAttribute.cs" />
+     <Compile Include="Assets\script\CategoryAttribute.cs" />
+     <Compile Include="Assets\script\Conditions\Animator\GetBool.cs" />
+     <Compile Include="Assets\script\Conditions\Animator\GetFloat.cs" />
+     <Compile Include="Assets\script\Conditions\Animator\IsInTransition.cs" />
+     <Compile Include="Assets\script\Conditions\Animator\IsName.cs" />
+     <Compile Include="Assets\script\Conditions\BaseCondition.cs" />
+     <Compile Include="Assets\script\Conditions\EnumComparer.cs" />
+     <Compile Include="Assets\script\Conditions\FloatComparer.cs" />
+     <Compile Include="Assets\script\Conditions\GameObject\Angle2Target.cs" />
+     <Compile Include="Assets\script\Conditions\GameObject\AngleForward2Distance.cs" />
+     <Compile Include="Assets\script\Conditions\GameObject\AngleForward2Forward.cs" />
+     <Compile Include="Assets\script\Conditions\GameObject\Distance.cs" />
+     <Compile Include="Assets\script\Conditions\GameObject\EscapeDistance.cs" />
+     <Compile Include="Assets\script\Conditions\GameObject\IsNull.cs" />
+     <Compile Include="Assets\script\Conditions\GameObject\LineOfSight.cs" />
+     <Compile Include="Assets\script\Conditions\IntComparer.cs" />
+     <Compile Include="Assets\script\Conditions\Misc\AttributeValue.cs" />
+     <Compile Include="Assets\script\Conditions\Misc\CountDownTimer.cs" />
+     <Compile Include="Assets\script\Conditions\Misc\ExitTime.cs" />
+     <Compile Include="Assets\script\Conditions\Misc\GetParameterBool.cs" />
+     <Compile Include="Assets\script\Conditions\Misc\GetParameterFloat.cs" />
+     <Compile Include="Assets\script\Conditions\Misc\GetParameterInt.cs" />
+     <Compile Include="Assets\script\Conditions\Misc\RandomValue.cs" />
+     <Compile Include="Assets\script\Conditions\Misc\TimeCounter.cs" />
+     <Compile Include="Assets\script\Conditions\NavMeshAgent\IsOnOffMeshLink.cs" />
+     <Compile Include="Assets\script\Conditions\ValueType.cs" />
+     <Compile Include="Assets\script\MinMax.cs" />
+     <Compile Include="Assets\script\Parameters\AudioClipParameter.cs" />
+     <Compile Include="Assets\script\Parameters\BoolParameter.cs" />
+     <Compile Include="Assets\script\Parameters\ColorParameter.cs" />
+     <Compile Include="Assets\script\Parameters\FloatParameter.cs" />
+     <Compile Include="Assets\script\Parameters\GameObjectParameter.cs" />
+     <Compile Include="Assets\script\Parameters\IntParameter.cs" />
+     <Compile Include="Assets\script\Parameters\LayerMaskParameter.cs" />
+     <Compile Include="Assets\script\Parameters\NamedParameter.cs" />
+     <Compile Include="Assets\script\Parameters\ParameterExtensions.cs" />
+     <Compile Include="Assets\script\Parameters\StringParameter.cs" />
+     <Compile Include="Assets\script\Parameters\TagParameter.cs" />
+     <Compile Include="Assets\script\Parameters\Vector3Parameter.cs" />
+     <Compile Include="Assets\script\Plugins\ListExtensions.cs" />
+     <Compile Include="Assets\script\Plugins\Styles.cs" />
+     <Compile Include="Assets\script\Plugins\UnityEditorTools.cs" />
+     <Compile Include="Assets\script\PropertyAttributes\AnimatorParameterAttribute.cs" />
+     <Compile Include="Assets\script\PropertyAttributes\ArrayElementAttribute.cs" />
+     <Compile Include="Assets\script\PropertyAttributes\AttributePopupAttribute.cs" />
+     <Compile Include="Assets\script\PropertyAttributes\HideAttribute.cs" />
+     <Compile Include="Assets\script\PropertyAttributes\MinMaxAttribute.cs" />
+     <Compile Include="Assets\script\PropertyAttributes\StoreParameterAttribute.cs" />
+     <Compile Include="Assets\script\PropertyAttributes\TagAttribute.cs" />
+     <Compile Include="Assets\script\PropertyAttributes\UseGlobalPrameterAttribute.cs" />
+     <Compile Include="Assets\script\States\AnyState.cs" />
+     <Compile Include="Assets\script\States\CheckBool.cs" />
+     <Compile Include="Assets\script\States\NavMeshAgent\Flee.cs" />
+     <Compile Include="Assets\script\States\NavMeshAgent\Follow.cs" />
+     <Compile Include="Assets\script\States\NavMeshAgent\Patrol.cs" />
+     <Compile Include="Assets\script\States\NavMeshAgent\Simple.cs" />
+     <Compile Include="Assets\script\States\NavMeshAgent\Walk.cs" />
+     <Compile Include="Assets\script\States\Node.cs" />
+     <Compile Include="Assets\script\States\State.cs" />
+     <Compile Include="Assets\script\States\Triggers\BaseTrigger.cs" />
+     <Compile Include="Assets\script\States\Triggers\OnAttributeChanged.cs" />
+     <Compile Include="Assets\script\States\Triggers\OnForceCharacterToIdle.cs" />
+     <Compile Include="Assets\script\States\Triggers\OnIdle.cs" />
+     <Compile Include="Assets\script\States\Triggers\OnParameterChanged.cs" />
+     <Compile Include="Assets\script\States\Triggers\OnSetIntoGround.cs" />
+     <Compile Include="Assets\script\States\Triggers\OnSetOnGround.cs" />
+     <Compile Include="Assets\script\States\Triggers\OnTriggerEnter.cs" />
+     <Compile Include="Assets\script\States\Triggers\OnVariableSet.cs" />
+     <Compile Include="Assets\script\States\Triggers\TriggerAttribute.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.8/Standalone/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityTools">
+ <HintPath>D:/AIController/Assets/script/Plugins/UnityTools.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
