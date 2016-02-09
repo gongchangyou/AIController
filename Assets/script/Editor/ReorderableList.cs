@@ -98,6 +98,7 @@ public class ReorderableList {
 				
 				GUILayout.BeginHorizontal ();
 				GUI.SetNextControlName (title + i);
+//				Debug.Log ("1 doFoldOut =" + doFoldOut + " foldOut= " + foldOut);
 				if (!doFoldOut && drawElementCallback != null) {
 					drawElementCallback (i);
 				}
@@ -114,7 +115,7 @@ public class ReorderableList {
 				}
 				
 				GUILayout.EndHorizontal ();
-				
+//				Debug.Log ("2 doFoldOut =" + doFoldOut + " foldOut= " + foldOut);
 				if (doFoldOut && foldOut && drawElementCallback != null) {
 					drawElementCallback (i);
 				}

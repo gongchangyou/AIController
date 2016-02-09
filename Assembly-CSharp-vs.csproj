@@ -59,6 +59,7 @@
      <Compile Include="Assets\script\Actions\Animator\SetTrigger.cs" />
      <Compile Include="Assets\script\Actions\Audio\Play.cs" />
      <Compile Include="Assets\script\Actions\BaseAction.cs" />
+     <Compile Include="Assets\script\Actions\Enemy\PatrolAction.cs" />
      <Compile Include="Assets\script\Actions\GameObject\Destroy.cs" />
      <Compile Include="Assets\script\Actions\GameObject\DestroyComponent.cs" />
      <Compile Include="Assets\script\Actions\GameObject\FindChild.cs" />
@@ -87,6 +88,11 @@
      <Compile Include="Assets\script\BaseAttribute.cs" />
      <Compile Include="Assets\script\BaseTransition.cs" />
      <Compile Include="Assets\script\CanCreateAttribute.cs" />
+     <Compile Include="Assets\script\CarState\CarStatePatrol.cs" />
+     <Compile Include="Assets\script\CarState\IState.cs" />
+     <Compile Include="Assets\script\CarState\IStateContext.cs" />
+     <Compile Include="Assets\script\CarState\StateBase.cs" />
+     <Compile Include="Assets\script\CarState\StateContext.cs" />
      <Compile Include="Assets\script\CategoryAttribute.cs" />
      <Compile Include="Assets\script\Conditions\Animator\GetBool.cs" />
      <Compile Include="Assets\script\Conditions\Animator\GetFloat.cs" />
@@ -113,6 +119,7 @@
      <Compile Include="Assets\script\Conditions\Misc\TimeCounter.cs" />
      <Compile Include="Assets\script\Conditions\NavMeshAgent\IsOnOffMeshLink.cs" />
      <Compile Include="Assets\script\Conditions\ValueType.cs" />
+     <Compile Include="Assets\script\EnemyCar.cs" />
      <Compile Include="Assets\script\MinMax.cs" />
      <Compile Include="Assets\script\Parameters\AudioClipParameter.cs" />
      <Compile Include="Assets\script\Parameters\BoolParameter.cs" />

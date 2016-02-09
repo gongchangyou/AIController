@@ -314,7 +314,35 @@ public class StateInspector : Editor {
 			}
 			SerializedProperty mProperty=obj.FindProperty (fields [cnt].Name);
 			if(mProperty != null){
-				EditorGUILayout.PropertyField (mProperty);
+				if(mProperty.isArray){
+					bool foldOut = EditorPrefs.GetBool (mProperty.displayName, true);
+		
+					GUI.SetNextControlName (mProperty.displayName);
+				
+					string foldoutLabel=mProperty.displayName;
+					foldOut =  EditorGUILayout.Foldout (foldOut, foldoutLabel);
+					EditorPrefs.SetBool (mProperty.displayName, foldOut);	
+//					Debug.Log ( mProperty.displayName + mProperty.GetHashCode () + " foldOut= " + foldOut);
+					if (foldOut) {
+						//画出size 和element
+						GUILayout.BeginVertical();
+						EditorGUI.indentLevel += 1;	//增加缩进
+						mProperty.arraySize = int.Parse( EditorGUILayout.TextField("Size:", mProperty.arraySize.ToString()) );
+						
+						for (int i = 0; i < mProperty.arraySize; i++) {
+							EditorGUILayout.PropertyField(mProperty.GetArrayElementAtIndex(i));
+						}
+						EditorGUI.indentLevel -= 1;//减少缩进
+						GUILayout.EndVertical();
+					}
+
+//					EditorGUILayout.PropertyField (mProperty);
+
+
+				}
+				else{
+					EditorGUILayout.PropertyField (mProperty);
+				}
 			}
 
 		}

@@ -1,35 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Conditions\GameObject\Angle2Target.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Editor\StateInspector.cs">
     <Files>
-      <File FileName="Assets\script\AIRuntimeController.cs" Line="86" Column="29" />
-      <File FileName="Assets\script\Conditions\GameObject\Distance.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Conditions\Misc\AttributeValue.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Conditions\Misc\CountDownTimer.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Conditions\Misc\ExitTime.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Conditions\Misc\GetParameterBool.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Conditions\Misc\GetParameterFloat.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Conditions\Misc\GetParameterInt.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Conditions\Misc\RandomValue.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Conditions\Misc\TimeCounter.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\States\Triggers\BaseTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\States\Triggers\OnAttributeChanged.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\States\Triggers\OnForceCharacterToIdle.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\States\Triggers\OnIdle.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\States\Triggers\OnTriggerEnter.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\States\Triggers\OnVariableSet.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\States\Triggers\TriggerAttribute.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Actions\Sound\PlayBGM.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Actions\Sound\StopBGM.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Conditions\GameObject\Angle2Target.cs" Line="29" Column="62" />
-      <File FileName="Assets\script\Conditions\GameObject\AngleForward2Distance.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\Editor\AIEditorWindow.cs" Line="495" Column="32" />
+      <File FileName="Assets\script\Editor\StateInspector.cs" Line="317" Column="4" />
+      <File FileName="Assets\script\Actions\Enemy\PatrolAction.cs" Line="11" Column="4" />
+      <File FileName="Assets\script\Editor\ReorderableList.cs" Line="102" Column="21" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>m_lstLevel</Value>
-          <Value>i</Value>
-          <Value>m_lstLevel[i]</Value>
+          <Value>foldOut</Value>
+          <Value>fields [cnt].Name</Value>
+          <Value>mProperty</Value>
           <Value>m_DeckIconList.Count</Value>
           <Value>unit.uaId</Value>
           <Value>m_Unit.ueId</Value>
